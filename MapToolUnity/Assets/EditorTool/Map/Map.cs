@@ -33,8 +33,8 @@ public class Map : MonoBehaviour
         MapModel = new MapModel();
         MapModel.Width = Width;
         MapModel.Height = Height;
-        
-        MapModel.Data = new BlockType[Width * Height];
+
+        MapModel.Data = new List<BlockModel>();
 
         var blocks = GetComponentsInChildren<MapBlock>();
         
@@ -44,7 +44,16 @@ public class Map : MonoBehaviour
             {
                 x = (int)block.transform.position.x;
                 z = (int)block.transform.position.z;
-                MapModel.SetBlock(block.block, (int)block.transform.position.x, (int)block.transform.position.z);
+                var blockModel = new BlockModel() 
+                {
+                    X = x, 
+                    Y = z, 
+                    Type = block.block, 
+                    RotY = block.transform.eulerAngles.y, 
+                    Width = block.transform.lossyScale.x, 
+                    Height = block.transform.lossyScale.z
+                };
+                MapModel.Data.Add(blockModel);
             }
         }
         catch (System.Exception e)
@@ -72,11 +81,11 @@ public class Map : MonoBehaviour
             var newMap = new GameObject("__MAP__");
             var _map = newMap.AddComponent<Map>();
             _map.MapModel = map;
-            for (int i = 0; i < map.Data.Length; i++)
+            for (int i = 0; i < map.Data.Count; i++)
             {
-                if (map.Data[i] != BlockType.None)
+                if (map.Data[i].Type != BlockType.None)
                 {
-                    var tileObj = tiles.FirstOrDefault((tile) => tile.block == map.Data[i]);
+                    var tileObj = tiles.FirstOrDefault((tile) => tile.block == map.Data[i].Type);
                     if (tileObj != null)
                     {
                         var tileView = GameObject.Instantiate(tileObj.gameObject) as GameObject;
@@ -85,8 +94,9 @@ public class Map : MonoBehaviour
                         int x = Mathf.CeilToInt(tileCenter.x - 0.5f);
                         int z = Mathf.CeilToInt(tileCenter.z - 0.5f);
 
-                        tileView.transform.position = new Vector3(x, 0, z);
+                        tileView.transform.position = new Vector3(map.Data[i].X, 0, map.Data[i].Y);
                         tileView.transform.SetParent(_map.transform);
+                        tileView.transform.rotation = Quaternion.Euler(0, map.Data[i].RotY, 0);
                         _map.AddBlock(tileView.GetComponent<MapBlock>());
                        
                     }

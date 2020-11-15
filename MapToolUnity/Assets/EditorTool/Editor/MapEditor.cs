@@ -219,19 +219,40 @@ public class MapEditor : EditorWindow
 			var newMap = new GameObject("__MAP__");
 			_map = newMap.AddComponent<Map>();
 			_map.MapModel = map;
-			for (int i = 0; i < map.Data.Length; i++)
+			for (int i = 0; i < map.Data.Count; i++)
 			{
 				// TODO: load tile based on data type
 
-				if (map.Data[i] != BlockType.None)
+				if (map.Data[i].Type != BlockType.None)
 				{
-					PaintTile(new Vector3(i / map.Width, 0, i % map.Width), GetTileById(map.Data[i]));
+					LoadBlock(map.Data[i], GetTileById(map.Data[i].Type));
 				}
 			}
 			
 		}
 	}
 
+	private void LoadBlock(BlockModel model, GameObject tile = null)
+	{
+		//var block = _map.GetBlock((int)model.X, (int)model.Y);
+		//if (block != null)
+		//{
+		//	return;
+		//}
+		GameObject gameObject = tile;
+		if (tile == null)
+		{
+			GameObject prefab = tiles[paletteIndex].gameObject;
+			gameObject = PrefabUtility.InstantiatePrefab(prefab) as GameObject;
+		}
+		gameObject.transform.position = new Vector3(model.X, 0, model.Y);
+		gameObject.transform.SetParent(_map.transform);
+		gameObject.transform.rotation = Quaternion.Euler(0,model.RotY,0);
+		_map.AddBlock(gameObject.GetComponent<MapBlock>());
+		lastSpawnedObject = gameObject.transform;
+		// Allow the use of Undo (Ctrl+Z, Ctrl+Y).
+		//Undo.RegisterCreatedObjectUndo(gameObject, "");
+	}
 
 	#endregion
 

@@ -1,5 +1,6 @@
 ﻿
 using System;
+using System.Collections.Generic;
 
 [Flags]
 [System.Serializable]
@@ -37,9 +38,8 @@ public class MapModel
 {
     public int Width;
     public int Height;
-    public BlockType[] Data;
+    public List<BlockModel> Data;
 
-
-    public BlockType GetBlock(int x, int y) => Data[x + Width * y];
-    public void SetBlock(BlockType block, int x, int y) => Data[x + Width * y] = block;
+    //public BlockType GetBlock(int x, int y) => Data[x + Width * y];
+    //public void SetBlock(BlockType block, int x, int y) => Data[x + Width * y] = block;
 }
