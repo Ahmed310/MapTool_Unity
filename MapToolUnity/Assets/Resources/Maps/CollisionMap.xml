@@ -1,0 +1,307 @@
+<?xml version="1.0"?>
+<MapModel xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Width>15</Width>
+  <Height>20</Height>
+  <Data>
+    <BlockType>Solid Block2</BlockType>
+    <BlockType>Solid Block2</BlockType>
+    <BlockType>Solid Block2</BlockType>
+    <BlockType>Solid Block2</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>Solid Crate</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>Solid Crate</BlockType>
+    <BlockType>Solid Crate</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>SpawnPoint</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>Solid Barrel</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>Solid Crate</BlockType>
+    <BlockType>Solid Crate</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>Solid Barrel</BlockType>
+    <BlockType>Solid Barrel</BlockType>
+    <BlockType>Solid Barrel</BlockType>
+    <BlockType>Solid Barrel</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>Solid Crate</BlockType>
+    <BlockType>Solid Crate</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>Solid Barrel</BlockType>
+    <BlockType>Solid Barrel</BlockType>
+    <BlockType>Solid Barrel</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>Solid Crate</BlockType>
+    <BlockType>Solid Crate</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>Solid Crate</BlockType>
+    <BlockType>Solid Crate</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>Solid Fence</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>Solid Tree</BlockType>
+    <BlockType>Solid Tree</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>Solid Crate</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>Solid Tree</BlockType>
+    <BlockType>Solid Tree</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>Solid Block2</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>Solid Tree</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>Solid Block2</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>Solid Tree</BlockType>
+    <BlockType>Solid Tree</BlockType>
+    <BlockType>Solid Tree</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>Solid Block2</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>Solid Tree</BlockType>
+    <BlockType>Solid Tree</BlockType>
+    <BlockType>Solid Tree</BlockType>
+    <BlockType>Solid Tree</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>Solid Block2</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>SpawnPoint</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>Solid Tree</BlockType>
+    <BlockType>Solid Tree</BlockType>
+    <BlockType>Solid Tree</BlockType>
+    <BlockType>Solid Tree</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>Water</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>Solid Block2</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>Solid Tree</BlockType>
+    <BlockType>Solid Tree</BlockType>
+    <BlockType>Solid Tree</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>Water</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>Solid Block2</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>Water</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>Water</BlockType>
+    <BlockType>Water</BlockType>
+    <BlockType>Water</BlockType>
+    <BlockType>Water</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>Solid Block2</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>Water</BlockType>
+    <BlockType>Water</BlockType>
+    <BlockType>Water</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>Water</BlockType>
+    <BlockType>Water</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>Solid Block2</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>Water</BlockType>
+    <BlockType>Water</BlockType>
+    <BlockType>Water</BlockType>
+    <BlockType>Water</BlockType>
+    <BlockType>Water</BlockType>
+    <BlockType>Water</BlockType>
+    <BlockType>Water</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>Solid Block2</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>Water</BlockType>
+    <BlockType>Water</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>Solid Block2</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>None</BlockType>
+    <BlockType>None</BlockType>
+  </Data>
+</MapModel>
