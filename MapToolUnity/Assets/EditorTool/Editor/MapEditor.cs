@@ -4,10 +4,6 @@ using UnityEngine;
 using System.Collections.Generic;
 using Object = UnityEngine.Object;
 
-/// <summary>
-/// This window shows how you can listen for and consume user input events
-/// from the Scene View. Super useful for making editor tools!
-/// </summary>
 public class MapEditor : EditorWindow
 {
 
@@ -16,7 +12,7 @@ public class MapEditor : EditorWindow
 	private int paletteIndex;
 	private Map _map;
 	const int TILES_IN_ROW = 3;
-	string[] options = new string[] { "None", "Paint", "Erase" };
+//	string[] options = new string[] { "None", "Paint", "Erase" };
 	int selectedOption = 0;
 	TextAsset mapContent;
 	string mapName;
@@ -39,6 +35,11 @@ public class MapEditor : EditorWindow
 		mapSize = new Vector2Int(60, 60);
 
 		_map = GameObject.FindObjectOfType<Map>();
+
+		if (_map != null)
+		{
+			mapSize = new Vector2Int(_map.Width, _map.Height);
+		}
 		editMode = true;
 	}
 
@@ -52,8 +53,8 @@ public class MapEditor : EditorWindow
 
     void OnGUI()
 	{
-		EditorGUILayout.HelpBox($"{"Press D to switch to Paint mode"}" +
-			$"\n{"Press E to switch to Erase Mode"}" +
+		EditorGUILayout.HelpBox($"{"Left mouse button click to paint a block"}" +
+			$"\n{"Right mouse button click to delete a block"}" +
 			$"\n{"Hold ctrl & move mouse fot batch Erase"}" +
 			$"\n{"Hold shift and move mouse for batch Paint"}" +
 			$"\n{"Do not remove Block Manually"}", MessageType.Info);
@@ -119,31 +120,32 @@ public class MapEditor : EditorWindow
 		
 	}
 
-	
 
+	int rotationOffSet = 45;
 	void DrawProperties() 
 	{
 		GUILayout.BeginVertical("BOX");
 
 		mapSize = EditorGUILayout.Vector2IntField("Map Size", mapSize, GUILayout.ExpandWidth(true));
 
-		GUILayout.Space(6);
-		GUILayout.Label("Options");
-		selectedOption = GUILayout.SelectionGrid(selectedOption, options, 3, GUILayout.ExpandWidth(true));
+		//GUILayout.Space(6);
+		//GUILayout.Label("Options");
+		//selectedOption = GUILayout.SelectionGrid(selectedOption, options, 3, GUILayout.ExpandWidth(true));
 		GUILayout.Space(24);
 
 
 		GUILayout.BeginHorizontal("box");
+		rotationOffSet = EditorGUILayout.IntField("Ratation Angle", rotationOffSet);
 		if (lastSpawnedObject != null)
 		{
-			GUILayout.Label("Rotate", GUILayout.Width(75));
+			//GUILayout.Label("Rotate", GUILayout.Width(75));
 			if (GUILayout.Button("<"))
 			{
-				lastSpawnedObject.Rotate(Vector3.up, -45);
+				lastSpawnedObject.Rotate(Vector3.up, -rotationOffSet);
 			}
 			if (GUILayout.Button(">"))
 			{
-				lastSpawnedObject.Rotate(Vector3.up, 45);
+				lastSpawnedObject.Rotate(Vector3.up, rotationOffSet);
 			}
 		}
 		GUILayout.EndHorizontal();
@@ -364,6 +366,7 @@ public class MapEditor : EditorWindow
 		var block = _map.GetBlock(x, z);
 		if (block != null)
 		{
+			lastSpawnedObject = block.transform; ;
 			return;
 		}
 		GameObject gameObject = tile;
