@@ -21,8 +21,11 @@
 <img src="https://github.com/Ahmed310/MapTool_Unity/blob/main/Screenshots/block-type.png"/>
 
 ### Map Tool Editor View
+
 1: Define map dimensions
+
 2: Rotate Last spawned or selected block
+
 3: Type a map name and save it
 <img src="https://github.com/Ahmed310/MapTool_Unity/blob/main/Screenshots/maptool_view.png"/>
 
